@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mr. Sketchy - VIP</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script type="text/javascript" src="script/jquery.js"></script>
+<script type="text/javascript" src="script/classes.js"></script>
+<script type="text/javascript" src="script/sketchy.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="site-head">
+            Mr. Sketchy
+        </div>
+        <div class="pushables">
+            <div class="tools">
+                <button id="tool_text"><img src="img/glyphicons-104-text-underline.png"/></button>
+                <button id="tool_rect"><img src="img/glyphicons-95-vector-path-square.png"/></button>
+                <button id="tool_circle"><img src="img/glyphicons-96-vector-path-circle.png"/></button>
+                <button id="tool_line"><img src="img/glyphicons-98-vector-path-line.png"/></button>
+                <button id="tool_pencil"><img src="img/glyphicons-31-pencil.png"/></button>
+                <button id="tool_mover"><img src="img/glyphicons-187-move.png"/></button> 
+            </div>
+            <div class="styles">
+            <button id="style_fill"  style="margin-top:50px;">Fill</button>
+            <button id="stroke_small"><img src="img/stroke_small.png"/></button>
+            <button id="stroke_medium"><img src="img/stroke_medium.png"/></button> 
+            <button id="stroke_big"><img src="img/stroke_big.png"/></button>
+            </div>
+        </div>
+        <div class="text-input">
+            <input type="text" id="tool_text_input" class="form-control" style="display:inline;"/>
+        </div>
+
+        <div class="actions">
+            <button id="action_undo" class="glyphicon glyphicon-chevron-left"></button>
+            <button id="action_redo" class="glyphicon glyphicon-chevron-right"></button>
+            <button id="action_clearall" class="glyphicon glyphicon-remove-circle"></button>
+        </div>
+        <div class="colors">
+            <button id="color_white" style="background: #FFFFFF" value="#FFFFFF"></button>
+            <button id="color_black" style="background: #000000" value="#000000"></button>
+            <button id="color_red" style="background: #FF0000" value="#FF0000"></button>
+            <button id="color_green" style="background: #00FF00" value="#00FF00"></button>
+            <button id="color_blue" style="background: #0000FF" value="#0000FF"></button>
+            <button id="color_yellow" style="background: #FFFF00" value="#FFFF00"></button>
+            <button id="color_pink" style="background: #FF00FF" value="#FF00FF"></button>            
+        </div>
+        <canvas id="sketchy" width="1000" height="700">
+            Your pathetic browser does not support Mr. Sketchy.
+        </canvas>
+           
+</body>
+</html>
